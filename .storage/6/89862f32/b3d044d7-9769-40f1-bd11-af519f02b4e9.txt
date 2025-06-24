@@ -1,0 +1,45 @@
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && ls -la
+total 4776
+drwxr-xr-x 169 root root 1630208 Jun 24 16:06 .
+drwxr-xr-x 170 root root 1634304 Jun 24 16:06 ..
+drwxr-xr-x  56 root root  487424 Jun 24 16:06 .git
+drwxr-xr-x   9 root root  413696 Jun 24 16:06 build
+drwxr-xr-x   3 root root   24576 Jun 24 16:06 cover
+drwxr-xr-x 103 root root  700416 Jun 24 16:06 workspace
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && find . -maxdepth 2 -type f | grep -v node_modules
+
+./.git/COMMIT_EDITMSG
+./.git/HEAD
+./.git/config
+./.git/description
+./.git/index
+./.git/packed-refs
+./cover/f824891de5e043228fe24bf889d60274.jpg
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && ls -la build/ && find ./workspace -maxdepth 2 -type f | grep -v node_modules
+
+total 2396
+drwxr-xr-x   9 root root  413696 Jun 24 16:06 .
+drwxr-xr-x 169 root root 1630208 Jun 24 16:06 ..
+drwxr-xr-x   8 root root  409600 Jun 24 16:06 v1
+./workspace/shadcn-ui/README.md
+./workspace/shadcn-ui/components.json
+./workspace/shadcn-ui/eslint.config.js
+./workspace/shadcn-ui/index.html
+./workspace/shadcn-ui/package.json
+./workspace/shadcn-ui/pnpm-lock.yaml
+./workspace/shadcn-ui/postcss.config.js
+./workspace/shadcn-ui/tailwind.config.ts
+./workspace/shadcn-ui/template_config.json
+./workspace/shadcn-ui/tsconfig.app.json
+./workspace/shadcn-ui/tsconfig.json
+./workspace/shadcn-ui/tsconfig.node.json
+./workspace/shadcn-ui/vite.config.ts
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh/build/v1 && ls -la
+
+total 1194
+drwxr-xr-x 8 root root 409600 Jun 24 16:06 .
+drwxr-xr-x 9 root root 413696 Jun 24 16:06 ..
+drwxr-xr-x 4 root root 393216 Jun 24 16:06 assets
+-rw-r--r-- 1 root root   2711 Jun 24 16:06 favicon.svg
+-rw-r--r-- 1 root root   2552 Jun 24 16:06 index.html
+-rw-r--r-- 1 root root     25 Jun 24 16:06 robots.txt

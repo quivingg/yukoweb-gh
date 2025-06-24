@@ -1,0 +1,124 @@
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && find . -name '.gitmodules' -o -name '.git*' | head -20
+./.git
+./.github
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && ls -la
+
+total 7833
+drwxr-xr-x 379 root root 2674688 Jun 24 16:11 .
+drwxr-xr-x 380 root root 2678784 Jun 24 16:06 ..
+drwxr-xr-x 262 root root 1515520 Jun 24 16:14 .git
+drwxr-xr-x   4 root root   12288 Jun 24 16:11 .github
+-rw-r--r--   1 root root     173 Jun 24 16:11 README.md
+drwxr-xr-x   9 root root  413696 Jun 24 16:06 build
+drwxr-xr-x   3 root root   24576 Jun 24 16:06 cover
+drwxr-xr-x 103 root root  700416 Jun 24 16:06 workspace
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && cat .gitmodules 2>/dev/null || echo 'No .gitmodules file found'
+
+No .gitmodules file found
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && git status
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && git config --list | grep submodule || echo 'No submodule config found'
+
+No submodule config found
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && git ls-files --stage | grep 160000
+
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && find workspace -name '.git' -type d
+
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && git ls-files --stage workspace
+
+100644 04abd3c2d2c6c771dee7dfeffee5f55723a35cb2 0	workspace/shadcn-ui/README.md
+100644 1961e2152181704dbe98541571404a4a0dfbba9e 0	workspace/shadcn-ui/components.json
+100644 89876153210c54e6b487d93fb7cc2400d53b7d35 0	workspace/shadcn-ui/eslint.config.js
+100644 c71190e3bd5cdb322d4ddd667305603e5e04f241 0	workspace/shadcn-ui/index.html
+100644 def5c72f4a2db52aaec3972fcd27e2359337a8d4 0	workspace/shadcn-ui/package.json
+100644 8ba0ae9ff87f33dc043585740577ab7537001032 0	workspace/shadcn-ui/pnpm-lock.yaml
+100644 5eec88dd73470d5c00fc354be7a55d89ffe7c573 0	workspace/shadcn-ui/postcss.config.js
+100644 6935a3a7dd31cc89235e83fae306fa2535864af6 0	workspace/shadcn-ui/public/favicon.svg
+100644 a78466b3d66c7386c0ccc2293a67bccf4b6c85ff 0	workspace/shadcn-ui/public/robots.txt
+100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0	workspace/shadcn-ui/src/App.css
+100644 692bc3fc3a9aa6d9b792220074b77d81782d98a8 0	workspace/shadcn-ui/src/App.tsx
+100644 294b3ec3ea6f6d8acb2c3902312ee2edc4f45545 0	workspace/shadcn-ui/src/components/ChatInterface.tsx
+100644 ba3d0f67ddd43f207e9769d054966c18591fb5ed 0	workspace/shadcn-ui/src/components/CustomCursor.tsx
+100644 a08c214cdaafcfe81ee80dd4d443ae07e9959ef2 0	workspace/shadcn-ui/src/components/Navigation.tsx
+100644 a63a8c040ff138080df56235ed305842c8f41df0 0	workspace/shadcn-ui/src/components/PhoneWidget.tsx
+100644 0899a9fa56d82391c492502410d84ff8928d9818 0	workspace/shadcn-ui/src/components/Preloader.tsx
+100644 97c088b82a5f8910112d7715403d5119c21e434a 0	workspace/shadcn-ui/src/components/SocialIcon.tsx
+100644 fe7f0a316a28706911e6e834c9717b013b6d459c 0	workspace/shadcn-ui/src/components/ThemeToggle.tsx
+100644 8b1a83ed1c4d632bdd5c957e4899881edd24e7b2 0	workspace/shadcn-ui/src/components/Timeline.tsx
+100644 f5c902f99bed8b45d31ab3882e45ff99c2bf8364 0	workspace/shadcn-ui/src/components/TypingAnimation.tsx
+100644 f438a056896995d53b8bc2495175ef037866eb76 0	workspace/shadcn-ui/src/components/VideoCard.tsx
+100644 f41f8631dc80a1822ee4be09ee81e0c5392d22e0 0	workspace/shadcn-ui/src/components/ui/accordion.tsx
+100644 8f90ebce5dfe5ba8b75db98ec28a3693985b2e07 0	workspace/shadcn-ui/src/components/ui/alert-dialog.tsx
+100644 d8ee2ea1e37f271a0a42b6730fb3c0f45bbe9059 0	workspace/shadcn-ui/src/components/ui/alert.tsx
+100644 c986ce3986d9a270ed8c3ad9c7f5ba43224bee25 0	workspace/shadcn-ui/src/components/ui/aspect-ratio.tsx
+100644 a639e7efc117a6ccdff1f8bef89205137861d524 0	workspace/shadcn-ui/src/components/ui/avatar.tsx
+100644 2232a7068564f193a3324c9348d7a567db65549c 0	workspace/shadcn-ui/src/components/ui/badge.tsx
+100644 eeaeff71006c0730fa5b2367323fdfd5e5336220 0	workspace/shadcn-ui/src/components/ui/breadcrumb.tsx
+100644 cef3dc5658dd1339fd9053b68454201c59137d6a 0	workspace/shadcn-ui/src/components/ui/button.tsx
+100644 3ac15d5d111d4634572d6a5ef9cd2e084583e30f 0	workspace/shadcn-ui/src/components/ui/calendar.tsx
+100644 a3e0e7f15bd0822e69fddedaeef989cc72b32a8c 0	workspace/shadcn-ui/src/components/ui/card.tsx
+100644 6aff571caa444421febfe720fb9226f2f6319211 0	workspace/shadcn-ui/src/components/ui/carousel.tsx
+100644 d28d46581b04ec1a6e8ec8a9943bc90e465f400f 0	workspace/shadcn-ui/src/components/ui/chart.tsx
+100644 36e0f1c6496dbe2bff3ad871e79d571c81c67f8b 0	workspace/shadcn-ui/src/components/ui/checkbox.tsx
+100644 b51c4054d58319c02975f3e81dfd2b3eb433cdce 0	workspace/shadcn-ui/src/components/ui/collapsible.tsx
+100644 f6fae66fdb1e10eacc7eaaed43107a75604b7742 0	workspace/shadcn-ui/src/components/ui/command.tsx
+100644 978197d2523557ee392f80dcafe9dc2eaaf4814b 0	workspace/shadcn-ui/src/components/ui/context-menu.tsx
+100644 8793f856201050336f3d93a1db7a9868eb4b1bb7 0	workspace/shadcn-ui/src/components/ui/dialog.tsx
+100644 cbfae97d830b89b1620067bd17ce4da11273d5e1 0	workspace/shadcn-ui/src/components/ui/drawer.tsx
+100644 704bd1793a921f3879c676ad3e4b52fd9dd26f89 0	workspace/shadcn-ui/src/components/ui/dropdown-menu.tsx
+100644 2d2115c3f41c534b8a5457d5a37fba98e33459cb 0	workspace/shadcn-ui/src/components/ui/form.tsx
+100644 940cb41278a78fffe45b98de6e0d8a6ec5200a11 0	workspace/shadcn-ui/src/components/ui/hover-card.tsx
+100644 407195e8e3752700045057895fd43d8d597eaf69 0	workspace/shadcn-ui/src/components/ui/input-otp.tsx
+100644 d0e1dafae7d3b90edde8c9a602ff002adeea53c9 0	workspace/shadcn-ui/src/components/ui/input.tsx
+100644 aa06600a460b5e826b149696b3d22917cfbf2bf8 0	workspace/shadcn-ui/src/components/ui/label.tsx
+100644 a5052d64e01f422aff848c0e09edf404d1ada7c7 0	workspace/shadcn-ui/src/components/ui/menubar.tsx
+100644 e829627725a2ea9dd212b2f659ac95634e366dc5 0	workspace/shadcn-ui/src/components/ui/navigation-menu.tsx
+100644 4f5b10b326983c787ab765c6cd0499ffa6a8db51 0	workspace/shadcn-ui/src/components/ui/pagination.tsx
+100644 202ce806475cb37bc7e036023274487fc4b8779c 0	workspace/shadcn-ui/src/components/ui/popover.tsx
+100644 847b9040989c741fcf5fd306a7e54ddeb5e2ada2 0	workspace/shadcn-ui/src/components/ui/progress.tsx
+100644 5340f4170e303917570bf79dcb2b4a61f6ce3ffc 0	workspace/shadcn-ui/src/components/ui/radio-group.tsx
+100644 27a601d2feafcd60d7750a8c72027e90d568b8ff 0	workspace/shadcn-ui/src/components/ui/resizable.tsx
+100644 371e91a9844a7a2d088ba216f5d132c200037fb1 0	workspace/shadcn-ui/src/components/ui/scroll-area.tsx
+100644 4bd79e0e39606d2c865389d670e825ee305f2e67 0	workspace/shadcn-ui/src/components/ui/select.tsx
+100644 5732d5f50721ab62775eafff47eb499e03ef68a9 0	workspace/shadcn-ui/src/components/ui/separator.tsx
+100644 4a3f7b1f9c227c897c221a5938b7347985251a09 0	workspace/shadcn-ui/src/components/ui/sheet.tsx
+100644 8a6a925d2279b8d1af9da4d864c6eeed087f227a 0	workspace/shadcn-ui/src/components/ui/sidebar.tsx
+100644 211c779dc95f80c4ef396636189cfbddc6377dc2 0	workspace/shadcn-ui/src/components/ui/skeleton.tsx
+100644 934fb395629e7dc6a4587a57d17bb29ad5e8b094 0	workspace/shadcn-ui/src/components/ui/slider.tsx
+100644 486f10102197f6372a41424ac00067c67dee4ca4 0	workspace/shadcn-ui/src/components/ui/sonner.tsx
+100644 e35705a16cdf0bb067188b26403e1170b74bcd54 0	workspace/shadcn-ui/src/components/ui/switch.tsx
+100644 12e386fc7fb4558cb97a2d426db64a1d2f53aac5 0	workspace/shadcn-ui/src/components/ui/table.tsx
+100644 01d8cd47abe24371caf2d6261d455a885acb9dae 0	workspace/shadcn-ui/src/components/ui/tabs.tsx
+100644 aea0e48d64f2c95a160ea839c93a8979cbc3f4cf 0	workspace/shadcn-ui/src/components/ui/textarea.tsx
+100644 a84511b8de7fa3079c016219573d9431aea5d345 0	workspace/shadcn-ui/src/components/ui/toast.tsx
+100644 0fd0fa8ff4921d1bb9095671e54ea4d9a1f378fa 0	workspace/shadcn-ui/src/components/ui/toaster.tsx
+100644 24c1e96fa94b4677bd42ba60c6f4e592e0826cc0 0	workspace/shadcn-ui/src/components/ui/toggle-group.tsx
+100644 3e94e21225ab9904e36ede7cd4ae6e08ef8b54c3 0	workspace/shadcn-ui/src/components/ui/toggle.tsx
+100644 4439121c510eb129bac5b8f9ea57dcb17e06ab80 0	workspace/shadcn-ui/src/components/ui/tooltip.tsx
+100644 8c0200455eb030ba1ecec2ec2d3df27bd2c996a9 0	workspace/shadcn-ui/src/components/ui/use-toast.ts
+100644 ad9c8be8dcb1c0b717bdf84f08530bb5053cd579 0	workspace/shadcn-ui/src/contexts/ThemeContext.tsx
+100644 a8605107e85136bf2a2828dc1bb2db416e3e1791 0	workspace/shadcn-ui/src/hooks/use-mobile.tsx
+100644 231a50f4ac7b334dac676fe50432e368c00eee01 0	workspace/shadcn-ui/src/hooks/use-toast.ts
+100644 5e14b1271b0bc3270cd72da28069048e3f63fbe8 0	workspace/shadcn-ui/src/hooks/useTheme.tsx
+100644 e0d8ed8c45f8f4ddd477243dc3d7c906adbea52d 0	workspace/shadcn-ui/src/index.css
+100644 6372cabe589ec19cae61c6542d754bb062c3cd10 0	workspace/shadcn-ui/src/lib/utils.ts
+100644 5643ebf36bfe41d16cf38849c92bfc68e4429e3d 0	workspace/shadcn-ui/src/main.tsx
+100644 cb085e297f58ddf76ec7d9d17b5163141d757418 0	workspace/shadcn-ui/src/pages/About.tsx
+100644 982fd4703b05a0efdf18c3cbbae7988861cbb41f 0	workspace/shadcn-ui/src/pages/Home.tsx
+100644 b177ab79cb77eafe414a71dc631cf6d778168898 0	workspace/shadcn-ui/src/pages/Index.tsx
+100644 5c4fab617aa3a791c4b2f36f95465c3cba0326b3 0	workspace/shadcn-ui/src/pages/Links.tsx
+100644 1e4fe22a677223ed54c6d6456522fb74f95f06a2 0	workspace/shadcn-ui/src/pages/NotFound.tsx
+100644 6a743fecb6d20ebe02f19df6f9f6fd7609f7be84 0	workspace/shadcn-ui/src/pages/Showcase.tsx
+100644 c487da8d46b1c61ac4769f4d346c6ef19c244fde 0	workspace/shadcn-ui/src/utils/webhookService.ts
+100644 7d0ff9efa9d6b0fd823a2f371308a9f92c7771c1 0	workspace/shadcn-ui/src/vite-env.d.ts
+100644 d30d5c8c5c1a589084e1c65f5133a1e3f4dce21c 0	workspace/shadcn-ui/tailwind.config.ts
+100644 7aff27d88f417dc3b3e7a52f2fa68206d9576f1c 0	workspace/shadcn-ui/template_config.json
+100644 1c7aafae9d1b150f54a85ed83b592862c7ea9f50 0	workspace/shadcn-ui/tsconfig.app.json
+100644 9f93d42c3a80c907a4482f866ef072ce0a53aaa5 0	workspace/shadcn-ui/tsconfig.json
+100644 06ebb8f14a0faeaf3100198387d8fa1afaaf712b 0	workspace/shadcn-ui/tsconfig.node.json
+100644 7ae97566b1a712e2f16f051976586766a35a1d94 0	workspace/shadcn-ui/vite.config.ts

@@ -1,0 +1,17 @@
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && find . -name '.gitmodules' -o -name '.git*' | head -20
+./.git
+./.github
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && ls -la
+
+total 7833
+drwxr-xr-x 379 root root 2674688 Jun 24 16:11 .
+drwxr-xr-x 380 root root 2678784 Jun 24 16:06 ..
+drwxr-xr-x 262 root root 1515520 Jun 24 16:14 .git
+drwxr-xr-x   4 root root   12288 Jun 24 16:11 .github
+-rw-r--r--   1 root root     173 Jun 24 16:11 README.md
+drwxr-xr-x   9 root root  413696 Jun 24 16:06 build
+drwxr-xr-x   3 root root   24576 Jun 24 16:06 cover
+drwxr-xr-x 103 root root  700416 Jun 24 16:06 workspace
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && cat .gitmodules 2>/dev/null || echo 'No .gitmodules file found'
+
+No .gitmodules file found

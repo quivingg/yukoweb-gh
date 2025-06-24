@@ -1,0 +1,3 @@
+$ cd /data/chats/ewajp/workspace/uploads/yukoweb-gh && find . -name '.gitmodules' -o -name '.git*' | head -20
+./.git
+./.github
